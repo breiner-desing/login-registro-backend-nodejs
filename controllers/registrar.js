@@ -34,7 +34,6 @@ export const init = async () => {
         "fecha_expedicion": "2022-10-16T05:00:00.000Z",
         "telefono": 32466666,
         "ciudad": "Cali",
-        "identificador": "IyWL8ct23OLwxfcMcg",
         "permisos": 3
     }
     
