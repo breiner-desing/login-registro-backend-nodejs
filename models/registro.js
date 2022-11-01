@@ -14,19 +14,19 @@ export const UserRegistro = bd.define('registro', {
     }, apellido:{
         type: DataTypes.STRING
     }, cedula:{
-        type: DataTypes.NUMBER
+        type: DataTypes.INTEGER
     }, correo:{
         type: DataTypes.STRING
     }, fecha_expedicion:{
         type: DataTypes.DATE
     }, telefono:{
-        type: DataTypes.NUMBER
+        type: DataTypes.INTEGER
     }, ciudad:{
         type: DataTypes.STRING
     }, identificador:{
-        type: DataTypes.NUMBER
+        type: DataTypes.STRING
     }, permisos:{
-        type: DataTypes.NUMBER,
+        type: DataTypes.INTEGER,
         defaultValue : 1
     }
 

@@ -1,5 +1,6 @@
 import { UserRegistro } from '../models/registro.js';
 import { login } from '../models/login.js';
+import { encryptPassword } from '../lib/config.js';
 
 export const regiUser = async (req) => {
     UserRegistro.create(req);
@@ -27,7 +28,7 @@ export const getdata = async ( identificador )  => {
         where : {
             identificador 
         }
-     }).then(resp => resp.get()).catch(error => { throw  "error login" });
+     }).then(resp => resp).catch(error => { throw  "error data" });
 
 }
 
@@ -88,3 +89,4 @@ export const deleteLogin = async (identificador) => {
         throw 'Error al eliminar usuario'
     })
 }
+

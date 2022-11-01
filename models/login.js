@@ -9,12 +9,10 @@ export const login = bd.define('login', {
         autoIncrement: true,
         primaryKey: true,
     }, identificador: {
-        type: DataTypes.NUMBER
+        type: DataTypes.STRING
     }, correo: {
         type: DataTypes.STRING
     }, contrasenia: {
-        type: DataTypes.NUMBER
-    }, permisos: {
         type: DataTypes.STRING
     }
 
